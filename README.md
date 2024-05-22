@@ -45,7 +45,7 @@ SHOPIFY_APP_ACCESS_TOKEN=<add app access token here>
 NGROK_URL=<add ngrok url here>
 ```
 
-### 6. Create a file
+### 6. Create the data file
 
 In the root directory, go to the `data.jsonl` and populate it with the customer data in the [CustomerInput type format](https://shopify.dev/docs/api/admin-graphql/2024-04/mutations/customerupdate), ensuring it's in JSONL format. To export all customers and create the correct format, you can use [Matrixify](https://matrixify.app/documentation/customers/) and a tool like ChatGPT to help format the data. You should use a country code to for the locale field, this can either be set manually because you are migrating customers from a specific store, or use the customer's Address Country Code. See example below:
 
@@ -54,7 +54,7 @@ In the root directory, go to the `data.jsonl` and populate it with the customer 
 { "input": { "id": "gid://shopify/Customer/2024050002", "locale": "NL" }}
 ```
 
-### 7. Start the app
+### 7. Run the app
 
 > ⚠️ Only do this in production after you've tested it on a development store
 
