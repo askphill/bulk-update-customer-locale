@@ -1,0 +1,10 @@
+config:
+  target: "http://localhost:3000"
+  phases:
+    - duration: 1
+      arrivalRate: 100000
+
+scenarios:
+  - flow:
+    - post:
+        url: "/webhooks/test"

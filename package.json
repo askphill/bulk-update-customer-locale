@@ -1,0 +1,20 @@
+{
+	"name": "update-customers-locale",
+	"version": "0.1.0",
+	"author": {
+		"name": "Ask Phill",
+		"url": "https://askphill.com"
+	},
+	"dependencies": {
+		"@shopify/shopify-api": "^9.0.2",
+		"artillery": "^2.0.4",
+		"body-parser": "^1.20.2",
+		"dotenv": "^16.4.5",
+		"express": "^4.18.2",
+		"nodemon": "^3.0.3",
+		"shopify-api-node": "^3.13.0"
+	},
+	"scripts": {
+		"start": "nodemon index.js"
+	}
+}
